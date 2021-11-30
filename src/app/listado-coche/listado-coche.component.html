@@ -1,0 +1,22 @@
+<p>listado-coche works!</p>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let Coche of Coches">Marca: {{ Marca }} Matricula: {{ Matricula }} Color: {{ Color }}</li>
+</ul>
+
+
+
+<form itemForm="ngForm"(ngSubmit)="nuevoCoche(itemForm)"></form>
+
+
+    <label for="marca">Marca:</label>
+    <input class="form-control" name="marca" type="text" ngModel required /><br><br>
+
+    <label for="matricula">Matricula:</label>
+    <input class="form-control" name="matricula" type="number" ngModel required /><br><br>
+
+    <label for="color">Color:</label>
+    <input class="form-control" name="color" type="text" ngModel required /><br><br>
+    
+
+</form>
